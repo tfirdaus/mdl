@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Material Design Cards</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+  	.mdl-layout__content {
+  		position: relative;
+  	}
+	  .mdl-button {
+	  	position: absolute;
+	  	bottom: 24px;
+	  	right: 24px;
+	  }
+  </style>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Acme</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#">Home</a>
+				<a class="mdl-navigation__link" href="#">About</a>
+				<a class="mdl-navigation__link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Tutorial</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Web Design</a>
+      <a class="mdl-navigation__link" href="">Photoshop</a>
+      <a class="mdl-navigation__link" href="">Sketch</a>
+      <a class="mdl-navigation__link" href="">UI and UX</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  	<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"><i class="material-icons">autorenew</i></button>
+  </main>
+</div>
+  
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+</body>
+</html>

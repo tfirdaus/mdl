@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Material Design Cards</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+  	.mdl-layout__content {
+  		position: relative;
+  	}
+	  .mdl-progress {
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  }
+	  .mdl-card {
+	  	width: 100%;
+	  	max-width: 530px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  	position: relative;
+	  }
+	  .page-content {
+	  	margin-top: 60px;
+	  	margin-bottom: 60px;
+	  }
+		#indeterminate-bar,
+		#video-buffer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		.mdl-card__media {
+			position: relative;
+		}
+		.mdl-card__media img {
+			opacity: 0.6;
+		}
+		.mdl-card__media .play {
+			position: absolute;
+			font-size: 3rem;
+			z-index: 3;
+			left: 50%;
+			top: 50%;
+			margin-top: -1.5rem;
+			margin-left: -1.5rem;
+		}
+		#spinner {
+			text-align: center;
+		}
+  </style>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Acme</span>
+    </div>
+    <div class="mdl-layout__tab-bar">
+      <a href="#indeterminate" class="mdl-layout__tab is-active">Indeterminate</a>
+      <a href="#buffer" class="mdl-layout__tab">Buffer</a>
+      <a href="#spinner" class="mdl-layout__tab">Spinner</a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Tutorial</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Web Design</a>
+      <a class="mdl-navigation__link" href="">Photoshop</a>
+      <a class="mdl-navigation__link" href="">Sketch</a>
+      <a class="mdl-navigation__link" href="">UI and UX</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  	<section class="mdl-layout__tab-panel is-active" id="indeterminate">
+	  	<div class="page-content">
+	  		<div class="mdl-card mdl-shadow--6dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Envato Market</h3>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit. Eos labore saepe inventore, amet, sapiente accusamus officiis,ducimus sunt veniam sequi voluptas! Consectetur exercitationem totam magnam facere in, consequuntur rerum ipsum.</p>
+					</div>
+					<div class="mdl-card__menu">
+						<button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">delete</i>
+				    </button>
+						<button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">get_app</i>
+				    </button>
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">more_vert</i>
+				    </button>
+				  </div>
+				  <div id="indeterminate-bar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+				</div>
+	  	</div>
+	  </section>
+		<section class="mdl-layout__tab-panel" id="buffer">
+	  	<div class="page-content">
+				<div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+					<div class="mdl-card__media mdl-color--grey-100">
+						<i class="play material-icons mdl-color-text--accent">play_circle_filled</i>
+						<img src="images/flower.jpg" height="360" width="600" alt="">
+						<div id="video-buffer" class="mdl-progress mdl-js-progress"></div>
+					</div>
+					<div class="mdl-card__actions">
+						<button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">high_quality</i>
+				    </button>
+						<button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">get_app</i>
+				    </button>
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">more_vert</i>
+				    </button>
+					</div>
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Flower</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur iste voluptates, perferendis veniam! Esse aperiam quasi consectetur molestiae placeat provident recusandae quibusdam. Eius, voluptatem libero totam minus. Nesciunt!</div>
+				</div>
+				
+				<script>
+				  document.querySelector('#video-buffer').addEventListener('mdl-componentupgraded', function() {
+				    this.MaterialProgress.setProgress(50);
+				    this.MaterialProgress.setBuffer(60);
+				  });
+				</script>
+	  	</div>
+		</section>
+		<section class="mdl-layout__tab-panel" id="spinner">
+	  	<div class="page-content">
+	  		<!-- MDL Spinner Component with Single Color -->
+	  		<p class="mdl-color-text--grey-500">Let me get the content. Please wait!</p>
+				<div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+	  	</div>
+		</section>
+  </main>
+</div>
+  
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+</body>
+</html>

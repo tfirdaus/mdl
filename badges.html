@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Material Design Cards</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+	  .mdl-tabs {
+	  	max-width: 600px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  }
+	  .mdl-card {
+	  	width: 80% !important;
+	  	margin-top: 30px;
+	  	margin-bottom: 30px;
+	  	margin-right: auto;
+	  	margin-left: auto;
+	  }
+  </style>
+</head>
+<body>
+
+<div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+  <main class="mdl-layout__content">
+		<div class="mdl-tabs mdl-js-tabs">
+		  <div class="mdl-tabs__tab-bar">
+		      <a href="#inbox-panel" class="mdl-tabs__tab is-active"><span class="mdl-badge" data-badge="3">Inbox</span></a>
+		      <a href="#flag-panel" class="mdl-tabs__tab"><span class="mdl-badge" data-badge="2">Flagged</span></a>
+		  </div>
+		  <div class="mdl-tabs__panel is-active" id="inbox-panel">
+		  	<!-- first card -->
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Envato Market</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, repellat, magnam est quis consectetur quo recusandae, eaque, nihil molestiae tempore temporibus culpa. Illum modi esse eum, asperiores cupiditate, repellat sapiente...</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<button class="mdl-button mdl-js-button mdl-button--colored">Reply</button>
+						<button class="mdl-button mdl-js-button">Delete</button>
+					</div>
+					<div class="mdl-card__menu">
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">flag</i>
+				    </button>
+				    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						    for="mail-flag">
+						  <li class="mdl-menu__item">Important</li>
+						  <li class="mdl-menu__item">Spam</li>
+						</ul>
+				  </div>
+				</div>
+				<!-- second card -->
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Medium Daily Digest</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, repellat, magnam est quis consectetur quo recusandae, eaque, nihil molestiae tempore temporibus culpa. Illum modi esse eum, asperiores cupiditate, repellat sapiente...</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<button class="mdl-button mdl-js-button mdl-button--colored">Reply</button>
+						<button class="mdl-button mdl-js-button">Delete</button>
+					</div>
+					<div class="mdl-card__menu">
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">flag</i>
+				    </button>
+				    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						    for="mail-flag">
+						  <li class="mdl-menu__item">Important</li>
+						  <li class="mdl-menu__item">Spam</li>
+						</ul>
+				  </div>
+				</div>
+				<!-- third card -->
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Dribbble</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, repellat, magnam est quis consectetur quo recusandae, eaque, nihil molestiae tempore temporibus culpa. Illum modi esse eum, asperiores cupiditate, repellat sapiente...</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<button class="mdl-button mdl-js-button mdl-button--colored">Reply</button>
+						<button class="mdl-button mdl-js-button">Delete</button>
+					</div>
+					<div class="mdl-card__menu">
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">flag</i>
+				    </button>
+				    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						    for="mail-flag">
+						  <li class="mdl-menu__item">Important</li>
+						  <li class="mdl-menu__item">Spam</li>
+						</ul>
+				  </div>
+				</div>
+		  </div>
+		  <div class="mdl-tabs__panel" id="flag-panel">
+		    <!-- second card -->
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Trello</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, repellat, magnam est quis consectetur quo recusandae, eaque, nihil molestiae tempore temporibus culpa. Illum modi esse eum, asperiores cupiditate, repellat sapiente...</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<button class="mdl-button mdl-js-button mdl-button--colored">Reply</button>
+						<button class="mdl-button mdl-js-button">Delete</button>
+					</div>
+					<div class="mdl-card__menu">
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">flag</i>
+				    </button>
+				    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						    for="mail-flag">
+						  <li class="mdl-menu__item">Important</li>
+						  <li class="mdl-menu__item">Spam</li>
+						</ul>
+				  </div>
+				</div>
+				<!-- third card -->
+				<div class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+						<h3 class="mdl-card__title-text">Invoicing</h3>
+					</div>
+					<div class="mdl-card__supporting-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, repellat, magnam est quis consectetur quo recusandae, eaque, nihil molestiae tempore temporibus culpa. Illum modi esse eum, asperiores cupiditate, repellat sapiente...</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<button class="mdl-button mdl-js-button mdl-button--colored">Reply</button>
+						<button class="mdl-button mdl-js-button">Delete</button>
+					</div>
+					<div class="mdl-card__menu">
+				    <button id="mail-flag" class="mdl-button mdl-button--icon mdl-js-button mdl-color-text--grey-600">
+				      <i class="material-icons">flag</i>
+				    </button>
+				    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+						    for="mail-flag">
+						  <li class="mdl-menu__item">Important</li>
+						  <li class="mdl-menu__item">Spam</li>
+						</ul>
+				  </div>
+		  </div>
+		</div>
+  </main>
+</div>
+  
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+</body>
+</html>
